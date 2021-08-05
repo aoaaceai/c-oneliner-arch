@@ -8,9 +8,13 @@ source=("https://github.com/aoaaceai/c-oneliner/releases/download/v$pkgver/$pkgn
 license=('BSD')
 sha256sums=('f575b2ddce8680f06b77a46af65470d82e99644b48f952c1ada3f96b9e66ab1a')
 
+build() {
+    cd "$pkgname-$pkgver"
+    ./configure --prefix=/usr
+}
+
 package() {
     cd "$pkgname-$pkgver"
-    ./configure
-    make install
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+    make DESTDIR="$pkgdir/" install
 }
