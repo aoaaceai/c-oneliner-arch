@@ -1,12 +1,12 @@
 pkgname=c-oneliner
-pkgver=0.0.2
+pkgver=0.0.3
 pkgrel=1
 pkgdesc="a one liner script to compile and run simple C/C++ programs."
 arch=('any')
 depends=('zsh')
 source=("https://github.com/aoaaceai/c-oneliner/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
 license=('BSD')
-sha256sums=('9578008c98b51835b17435988c5e2c707d52e588f66ddce3adb720e9fa4e7b2d')
+sha256sums=('8d017da3d33ffca248d5dc3acf9c216ee443aebc82e08224adf37f313bbdace7')
 
 build() {
     cd "$pkgname-$pkgver"
