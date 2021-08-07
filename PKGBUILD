@@ -1,6 +1,6 @@
 pkgname=c-oneliner
 pkgver=0.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="a one liner script to compile and run simple C/C++ programs."
 arch=('any')
 depends=('zsh' 'gcc')
