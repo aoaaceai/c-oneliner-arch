@@ -1,9 +1,9 @@
 pkgname=c-oneliner
 pkgver=0.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="a one liner script to compile and run simple C/C++ programs"
 arch=('any')
-depends=('zsh' 'gcc' 'aoaaceai-keyring')
+depends=('zsh' 'gcc')
 url='https://github.com/aoaaceai/c-oneliner'
 source=("$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
 license=('BSD')
